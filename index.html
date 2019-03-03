@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mon Allociné</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="http://www.allocine.fr/favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="assets/js/lib/jquery.loadTemplate.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img class="imgLogo" src="./assets/img/logo-allocine.png">
+        </div>
+        <nav class="navPrincipal">
+                <ul class="menu">
+                    <li><a href="#houseIcon"></a><i class="fas fa-home"></i></a></li>
+                    <li class="cinema"><a href="#cinema"></a>CINÉMA</a></li>
+                    <li class="series"><a href="#series">SÉRIES</a></li>
+                    <li><a href="#emission">ÉMISSIONS</a></li>
+                    <li><a href="#news">NEWS</a></li>    
+                </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <nav class="sousNav">
+            <ul class="sousMenu">
+                <li id="now_playing">En salles</li>
+                <li id="popular">Populaires</li>
+                <li id="top_rated">Mieux noté</li>
+                <li id="upcoming">A Venir</li>
+            </ul>
+            <div class="barreJaune">
+                <div class="undernow_playing"></div>
+                <div class="underpopular"></div>
+                <div class="undertop_rated"></div>
+                <div class="underupcoming"></div>
+            </div>
+        </nav>
+        
+        <div class="arrow"><i class="fas fa-arrow-circle-up fa-3x"></i></div>
+
+        <div href="now_playing" class="sousHeadernow_playing">
+            <h1>FILMS À L'AFFICHE</h1>
+            <h6>Retrouvez ici tous les films actuellement diffusés dans les salles de cinéma en France</h6>
+        </div>
+        <div href="popular" class="sousHeaderpopular">
+                <h1>POPULAIRES</h1>
+                <h6>Retrouvez ici les films les plus populaires du moment</h6>
+        </div>   
+        <div href="top_rated" class="sousHeadertop_rated">
+                <h1>FILMS LES MIEUX NOTÉS</h1>
+                <h6>Meilleurs films de tous les temps selon les spectateurs</h6>
+        </div>  
+        <div href="upcoming" class="sousHeaderupcoming">
+                <h1>FILMS À VENIR LES PLUS CONSULTÉS</h1>
+                <h6>Les films bientôt en salles qui ont eu le plus de consultations sur Allociné</h6>
+        </div>
+        <div class="loader"></div>  
+
+        <div id="template-container" class="cards"></div>
+    </div>
+    </div> 
+    <div class="background">
+        <div id="videoContainer"></div>
+    </div>
+</body>
+</html>

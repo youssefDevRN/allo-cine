@@ -1,0 +1,267 @@
+body {
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  z-index: 99;
+}
+
+header {
+  width: 1024px;
+  background-color: #f7cc46;
+  height: 120px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.navPrincipal {
+  margin-top: 10px;
+}
+
+.logo {
+  margin-bottom: 46px;
+  margin-left: 20px;
+}
+
+.logo img {
+  width: 150px;
+}
+
+.menu {
+  display: flex;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  margin-left: 10px;
+}
+
+.menu li {
+  padding: 0 20px;
+}
+
+.cinema {
+  background-color: white;
+}
+
+.menu > li:hover {
+  background-color: #f9db87;
+}
+
+.menu a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.sousMenu {
+  display: flex;
+  font-size: 13px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.sousMenu li {
+  margin: 0 10px;
+}
+
+.sousMenu li:hover {
+  color: #b3b3b3;
+  cursor: pointer;
+}
+
+.sousNav {
+  margin-bottom: 10px;
+  border-bottom: #000000;
+}
+
+.sousHeadernow_playing {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.sousHeaderpopular {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.sousHeadertop_rated {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.sousHeaderupcoming {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #b3b3b3;
+  padding: 10px;
+}
+
+.affiche img {
+  width: 200px;
+  margin: 0 20px;
+}
+
+.card {
+  display: flex;
+  margin: 30px 20px;
+}
+
+.content {
+  margin-right: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content span {
+  font-size: 12px;
+  line-height: 20px;
+  color: rgb(95, 95, 241);
+}
+
+.title {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: right;
+  text-align: left;
+}
+
+.director .actors {
+  font-size: 13px;
+  line-height: 22px;
+}
+
+.overview {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 20px 0;
+}
+
+button {
+  margin: 20px 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.teaser {
+  background-color: black;
+  color: white;
+  width: 145px;
+  height: 40px;
+}
+
+.show {
+  background-color: #f7cc46;
+  color: black;
+  width: 90px;
+  height: 40px;
+}
+
+#videoContainer {
+  display: none;
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: auto;
+}
+
+.background {
+  display: block;
+  /* position: fixed; */
+  background: rgba(0, 0, 0, 1);
+  width: 100%;
+  height: 100%;
+}
+
+.barreJaune {
+  display: flex;
+  background-color: #f2f2f2;
+}
+
+.undernow_playing {
+  display: none;
+  width: 75px;
+  height: 2px;
+  background-color: #f7cc46;
+}
+
+.underpopular {
+  display: none;
+  width: 85px;
+  height: 2px;
+  margin-left: 80px;
+  background-color: #f7cc46;
+}
+
+.undertop_rated {
+  display: none;
+  width: 90px;
+  height: 2px;
+  margin-left: 170px;
+  background-color: #f7cc46;
+}
+
+.underupcoming {
+  display: none;
+  width: 65px;
+  height: 2px;
+  margin-left: 260px;
+  background-color: #f7cc46;
+}
+
+.arrow {
+  display: none;
+  position: fixed;
+  top: 90%;
+  left: 90%;
+}
+
+.loader {
+  display: none;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin-left: 400px;
+  margin-top: 20px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
